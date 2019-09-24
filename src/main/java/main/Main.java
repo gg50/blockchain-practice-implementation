@@ -1,13 +1,13 @@
 package main;
 
-import model.BlockChain;
+import models.Simple;
 
 /**
  * @version 1.0
  */
 public class Main {
     public static void main(String[] args) {
-        BlockChain blockChain = new BlockChain();
+        Simple.BlockChain blockChain = new Simple.BlockChain();
         blockChain.addData("Hello ");
         blockChain.addData("World");
         blockChain.addData("!");
