@@ -1,1 +1,0 @@
-Small test for git credential storage
