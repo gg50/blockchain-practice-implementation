@@ -1,0 +1,35 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'blockchain'
+version '1.0'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Lombok (https://projectlombok.org/)
+    compileOnly 'org.projectlombok:lombok:1.18.8'
+    annotationProcessor 'org.projectlombok:lombok:1.18.8'
+
+    // Apache Log4J (Best Logging EVER)
+    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.12.1'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.12.1'
+
+    // Gson (Google's JSON parsing library)
+    compile 'com.google.code.gson:gson:2.8.5'
+
+    // Guava (Google' auxiliary libraries for Java)
+    compile 'com.google.guava:guava:28.1-jre'
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+run {
+    main "main.Main"
+}
